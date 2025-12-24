@@ -1,3 +1,8 @@
-// Pro X Studios
-// Main JS file
-// Intentionally minimal & safe
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("siteNav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
