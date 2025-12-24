@@ -5,6 +5,38 @@
 <title>Lyrics — Pro X Studios</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+/* Lyrics specific (safe, minimal) */
+.song-list button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 18px;
+  border-radius: 14px;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.song-list button:hover {
+  border-color: var(--accent);
+}
+
+.lyrics-box {
+  display: none;
+  margin-top: 30px;
+  white-space: pre-line;
+  color: #eaeaf0;
+}
+
+.credits {
+  margin-top: 25px;
+  font-size: 14px;
+  color: var(--muted);
+}
+</style>
 </head>
 
 <body>
@@ -15,7 +47,6 @@
       <img src="assets/img/logo.png" alt="Pro X Studios Logo">
       Pro X Studios
     </a>
-
     <nav>
       <a href="index.html">Home</a>
       <a href="videos.html">Videos</a>
@@ -29,62 +60,85 @@
 <main class="container">
 
 <section class="section">
-  <h2>Shree Ram Hanuman Milan</h2>
+  <h2>Lyrics</h2>
+  <p>Select a song to read full lyrics.</p>
 
-  <p style="color:var(--muted); margin-bottom:20px;">
-    Lyrics by <strong>1 Liner</strong><br>
-    Music, Mix & Master: <strong>Rajkamal Jangir</strong>
-  </p>
-
-  <div style="white-space:pre-line; line-height:1.9; font-size:16px; color:#eaeaf0;">
-
-बजरंगबली की राम जी से भेंट हो रही है।  
-बजरंगबली की राम जी से भेंट हो रही है।।  
-अद्भुत घड़ी मिलन की नैना भिगो रही है।  
-बजरंगबली की राम जी से भेंट हो रही है।।  
-
-ये कहा सुग्रीव ने, भेष बदलकर जाइए।  
-कौन है दोनों धर्मधर, जाकर पता लगाइए।।  
-सुनते ही हनुमत ने, इक पल भी नहीं विचारा।  
-पलक झपकते से पहले ही, ब्राह्मण का रूप धारा।।  
-
-और पवनसुत जा पहुँचे, राम लखन के सामने।  
-पूछा पता तब हनुमत से, सुग्रीव का श्री राम ने।।  
-क्या प्रयोजन मिलने का, मैं तनिक यह जान लूँ।  
-फिर स्वयं मिलवा दूँ यदि, आपको पहचान लूँ।।  
-
-नियति सुखद क्षणों की लड़ी पिरो रही है।  
-नियति सुखद क्षणों की लड़ी पिरो रही है।  
-बजरंगबली की राम जी से भेंट हो रही है।  
-बजरंगबली की राम जी से भेंट हो रही है।।  
-
-मैं हूँ लखन छोटा भाई, यह बड़े भ्राता राम हैं।  
-यही अयोध्या के कुंवर, रघुवंश की पहचान हैं।।  
-इतना सुनते ही अपने असली रूप में आकर के।  
-लिपट पड़े चरणों से प्रभु के, चिर सेवक हनुमान हैं।।  
-
-मैं भी कैसा भक्त हूँ, जिसने रघुवर को न पहचाना।  
-जिनके नाम से चलता है मेरी साँस का ये ताना-बाना।।  
-सजल हुए नैनों के भीतर, मन का भाव उमड़ आया।  
-उठा के हनुमत को रघुनन्दन राम ने गले लगाया।।  
-
-लगता है जैसे नदिया सागर में खो रही है।  
-या प्रीत के समन्दर में खुद को डुबो रही है।।  
-बजरंगबली की राम जी से भेंट हो गई है।  
-बजरंगबली की राम जी से भेंट हो गई है।।
-  
+  <!-- SONG LIST -->
+  <div class="song-list">
+    <button onclick="showLyrics('ramhanuman')">
+      श्रीराम हनुमान मिलन
+    </button>
   </div>
+
+  <!-- LYRICS -->
+  <div id="ramhanuman" class="lyrics-box">
+
+    <strong>गीत के बोल:</strong>
+
+    बजरंगबली की राम जी से भेंट हो रही है।  
+    बजरंगबली की राम जी से भेंट हो रही है॥  
+    अद्भुत घड़ी मिलन की नैना भिगो रही है।  
+    बजरंगबली के राम जी से भेंट हो रही है॥
+
+    ये कहा सुग्रीव ने, भेष बदलकर जाइए।  
+    कौन है दोनों धुरंधर, जाकर पता लगाइए॥  
+    सुनते ही हनुमत ने, इक पल भी नहीं विचारा।  
+    पलक झपकते से पहले ही, ब्राह्मण का रूप धारा॥
+
+    और पवनसुत जा पहुंचे, राम लखन के सामने।  
+    पूछा पता तब हनुमत से, सुग्रीव का श्री राम ने॥  
+    क्या प्रयोजन मिलने का, मैं तनिक यह जान लूं।  
+    फिर स्वयं मिलवा दूंगा यदि, आपको पहचान लूं॥
+
+    नियति सुखद क्षणों की लड़ी पिरो रही है।  
+    नियति सुखद क्षणों की लड़ी पिरो रही है।  
+    बजरंगबली की राम जी से भेंट हो रही है॥  
+    बजरंगबली की राम जी से भेंट हो रही है॥
+
+    मैं हूं लखन छोटा भाई, यह बड़े भ्राता राम हैं।  
+    यही अयोध्या के कुंवर, रघुवंश की पहचान हैं॥  
+    इतना सुनते ही अपने असली रूप में आकर के।  
+    लिपट पड़े चरणों से प्रभु के चिर सेवक हनुमान हैं॥
+
+    मैं भी कैसा भक्त हूं जिसने रघुवर को ना पहचाना।  
+    जिनके नाम से चलता है मेरी सांस का ये ताना-बाना॥  
+    सजल हुए नैनों के भीतर मन का भाव उमड़ आया।  
+    उठा के हनुमत को रघुनंदन राम ने गले लगाया॥
+
+    लगता है जैसे नदिया सागर में खो रही है।  
+    या प्रीत के समंदर में खुद को डुबो रही है॥  
+    बजरंगबली की राम जी से भेंट हो गई है।  
+    बजरंगबली की राम जी से भेंट हो गई है॥
+
+    <!-- CREDITS -->
+    <div class="credits">
+      <strong>Credits:</strong><br>
+      Singer: Rakesh Chauhan<br>
+      Lyrics: 1 Liner<br>
+      Music, Mix & Master: Rajkamal Jangir<br>
+      Producer: Pro X Studios
+    </div>
+
+  </div>
+
 </section>
 
 </main>
 
 <footer>
-  © 2025 Pro X Studios. All Rights Reserved.<br>
-  <span style="font-size:13px; color:#9aa0b4;">
-    Official lyrics by 
-    <span style="color:#ff2f92; font-weight:600;">1 Liner</span>
-  </span>
+© 2025 Pro X Studios. All Rights Reserved.<br>
+Official videos by 
+<a href="https://youtube.com/@1linermusic" target="_blank" style="color:#ff2f92;">1 Liner</a>
 </footer>
+
+<script>
+function showLyrics(id) {
+  document.querySelectorAll('.lyrics-box').forEach(box => {
+    box.style.display = 'none';
+  });
+  document.getElementById(id).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
