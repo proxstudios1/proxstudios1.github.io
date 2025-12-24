@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lyrics — Pro X Studios</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+/* Lyrics specific (safe, minimal) */
+.song {
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  margin-bottom: 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.song:hover {
+  border-color: var(--accent);
+}
+
+.lyrics {
+  display: none;
+  margin-top: 14px;
+  white-space: pre-line;
+  color: var(--muted);
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-grid">
+    <a class="brand" href="/">
+      <img src="assets/img/logo.png" alt="Pro X Studios Logo">
+      Pro X Studios
+    </a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="lyrics.html">Lyrics</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="section">
+  <h2>Song Lyrics</h2>
+  <p>Click on any song to read full lyrics</p>
+
+  <!-- SONG 1 -->
+  <div class="song" onclick="toggleLyrics(1)">
+    <strong>Shree Ram Hanuman Milan</strong> — 1 Liner
+    <div id="lyrics-1" class="lyrics">
+Shree Ram Hanuman Milan
+Bhakti ka ye pavitra sangam
+Bal aur buddhi ka mel yahan
+Jai Siya Ram, Jai Bajrangbali
+    </div>
+  </div>
+
+  <!-- SONG 2 -->
+  <div class="song" onclick="toggleLyrics(2)">
+    <strong>Shyam Chhavi Teri</strong> — 1 Liner
+    <div id="lyrics-2" class="lyrics">
+Shyam chhavi teri man bhaye
+Mohan murat mann bas jaye
+Bhakton ke tu praan ho
+Radha ka tu shyam ho
+    </div>
+  </div>
+
+  <!-- SONG 3 -->
+  <div class="song" onclick="toggleLyrics(3)">
+    <strong>Koi Yaar Na Koi Beli</strong> — Traditional
+    <div id="lyrics-3" class="lyrics">
+Koi yaar na koi beli
+Jag maya sab khel nirali
+Saath chale bas naam tera
+Baaki sab duniya jali
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  © 2025 Pro X Studios. All Rights Reserved.<br>
+  <span style="font-size:13px; color:#9aa0b4;">
+    Official videos by 
+    <a href="https://youtube.com/@1linermusic"
+       target="_blank"
+       style="color:#ff2f92; font-weight:600;">
+      1 Liner
+    </a>
+  </span>
+</footer>
+
+<script>
+function toggleLyrics(id) {
+  const el = document.getElementById("lyrics-" + id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
